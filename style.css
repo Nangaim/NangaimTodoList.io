@@ -20,6 +20,12 @@ header {
   align-items: center;
 }
 
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 form {
   min-height: 20vh;
   display: flex;
@@ -40,7 +46,6 @@ form button {
   color: #d88771;
   background: white;
   cursor: pointer;
-
   transition: color 0.5 ease;
 }
 
@@ -143,4 +148,58 @@ select {
 .select:hover::after {
   background: white;
   color: #ff6f47;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    margin-top: 5rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background: white;
+  }
+  .todo-list {
+    min-width: 30%;
+    list-style: none;
+  }
+
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  select {
+    color: #ff6f47;
+    width: rem;
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #ff6f47;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
 }
