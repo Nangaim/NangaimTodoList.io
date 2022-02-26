@@ -190,7 +190,6 @@ select {
   }
 
   select {
-    color: #ff6f47;
     width: rem;
     cursor: pointer;
     padding: 1rem;
@@ -199,7 +198,6 @@ select {
   .select::after {
     content: "\25BC";
     position: absolute;
-    background: #ff6f47;
     top: 0;
     right: 0;
     padding: 1rem;
